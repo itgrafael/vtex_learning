@@ -1,0 +1,21 @@
+{
+  "store.custom#landing": {
+    "blocks": [
+      "search-result-layout.customQuery#landing"
+    ]
+  },
+  "search-result-layout.customQuery#landing": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "Televisor",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop"
+    ]
+  }
+}
