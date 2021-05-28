@@ -1,0 +1,24 @@
+{
+  "memory": 128,
+  "ttl": 10,
+  "timeout": 2,
+  "minReplicas": 2,
+  "maxReplicas": 10,
+  "workers": 4,
+  "events": {
+    "example": {
+      "sender": "vtexcol.itg-events-dev",
+      "keys": ["send-event"]
+    }
+  },
+  "routes": {
+    "hcheck": {
+      "path": "/_v/app/itg-events-dev/hcheck",
+      "public": true
+    },
+    "analytics": {
+      "path": "/_v/app/itg-events-dev/analytics/realTime",
+      "public": true
+    }
+  }
+}

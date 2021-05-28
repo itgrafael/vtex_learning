@@ -1,0 +1,17 @@
+[
+  {
+    "name": "mocked-analytics",
+    "description": "Allows access to Mocked analytrics",
+    "statements": [
+      {
+        "actions": [
+          "get"
+        ],
+        "effect": "allow",
+        "resources": [
+          "vrn:vtex.mocked-analytics:{{region}}:{{account}}:{{workspace}}:/_v/live-products"
+        ]
+      }
+    ]
+  }
+]
